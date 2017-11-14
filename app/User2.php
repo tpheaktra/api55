@@ -33,6 +33,10 @@ class User2 extends Authenticatable
         return 'Hello';
     }
 
+      public function test5(){
+        return 'Hello';
+    }
+
     public function test2(){
         return 'Hello';
     }
