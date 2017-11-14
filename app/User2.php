@@ -32,4 +32,8 @@ class User2 extends Authenticatable
     public function test(){
         return 'Hello';
     }
+
+    public function test2(){
+        return 'Hello';
+    }
 }
