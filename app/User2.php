@@ -34,7 +34,6 @@ class User2 extends Authenticatable
     }
 
       public function test5(){
-        return 'Hello1111111111111111111111111111';
     }
 
     public function test2(){
