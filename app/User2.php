@@ -27,4 +27,9 @@ class User2 extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function test(){
+        return 'Hello';
+    }
 }
