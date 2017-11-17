@@ -20,3 +20,4 @@ Route::get('/a', function () {
     return view('welcome');
 });
 
+Route::get('api/products','ProductController@index');
