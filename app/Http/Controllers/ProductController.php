@@ -24,10 +24,33 @@ class ProductController extends Controller
     public function index()
     {
         $status = $this->status->get();
-        return response()->json($status
-          // 'Status'=>true,
-         //  'Data'  => $status
-        );
+        return response()->json([
+                    
+                    'Network'=>[
+                        'id'=> 1,
+                        'join' => 1,
+
+                        'info'=>[
+                                'title'=>'hello',
+                                'desc' =>'description'
+                        ],
+
+                        'Network_member'=>[
+                            'id'=>2,
+                            'favarite'=>'test',
+                                'desc'=>[
+                                    'presonal'=>[
+                                        'year'=>2,
+                                    ],
+                                    'business'=>[
+                                        $status
+                                    ],
+                                ],
+                        ],
+
+                       
+                    ],
+                ],200);
     }
 
     /**
